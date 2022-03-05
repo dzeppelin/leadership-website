@@ -43,7 +43,7 @@ function HeroHome() {
         {/* Hero content */}
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="text-center pb-10 md:pb-14">
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
@@ -62,28 +62,6 @@ function HeroHome() {
                 Our landing page template works on all devices, so you only have
                 to set it up once, and get beautiful results forever.
               </p>
-              <div
-                className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
-                data-aos="zoom-y-out"
-                data-aos-delay="300"
-              >
-                <div>
-                  <a
-                    className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="#0"
-                  >
-                    Learn more
-                  </a>
-                </div>
-                <div>
-                  <a
-                    className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
-                    href="#0"
-                  >
-                    Open source
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -120,7 +98,7 @@ function HeroHome() {
                   <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
                   <path d="M10 17l6-5-6-5z" />
                 </svg>
-                <span className="ml-3">Watch the full video (2 min)</span>
+                <span className="ml-3">Watch the full video</span>
               </button>
             </div>
 
@@ -138,9 +116,8 @@ function HeroHome() {
                   src="https://player.vimeo.com/video/216462798?h=52e94737e3"
                   width="640"
                   height="360"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="autoplay; fullscreen; picture-in-picture"
-                  allowfullscreen
                 ></iframe>
               </div>
             </Modal>

@@ -57,7 +57,7 @@ function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={LOGO} alt="" style={{ height: 60, width: 60 }} />
+              <img src={LOGO} alt="" style={{ height: 50, width: 50 }} />
             </Link>
           </div>
 
@@ -67,18 +67,10 @@ function Header() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  to="/about"
+                  to="/notes"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/materials"
-                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
-                >
-                  Materials
+                  Notes
                 </Link>
               </li>
               <li>
@@ -131,18 +123,10 @@ function Header() {
                 <ul className="px-5 py-2">
                   <li>
                     <Link
-                      to="/about"
+                      to="/notes"
                       className="flex text-gray-600 hover:text-gray-900 py-2"
                     >
-                      About us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/books"
-                      className="flex text-gray-600 hover:text-gray-900 py-2"
-                    >
-                      Books
+                      Notes
                     </Link>
                   </li>
                   <li>

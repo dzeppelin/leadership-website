@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 
 import "./css/style.scss";
 
@@ -9,10 +11,8 @@ import Sticky from "sticky-js";
 import Home from "./pages/Home";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
-import About from "./pages/About";
-import Help from "./pages/Support";
 import PageNotFound from "./pages/PageNotFound";
-import Materials from "./pages/Documentation";
+import Notes from "./pages/Documentation";
 
 function App() {
   const location = useLocation();
@@ -34,18 +34,18 @@ function App() {
     document.querySelector("html").style.scrollBehavior = "";
   }, [location.pathname]); // triggered on route change
 
+  const client = new ApolloClient({ uri: "https://admin.talapov.com/graphql" });
+
   return (
-    <>
+    <ApolloProvider client={client}>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/materials" element={<Materials />} />
-        <Route path="/blog-post" element={<BlogPost />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/support" element={<Help />} />
+        <Route path="/notes" element={<Notes />} />
+        <Route path="/post/:id" element={<BlogPost />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </>
+    </ApolloProvider>
   );
 }
 
