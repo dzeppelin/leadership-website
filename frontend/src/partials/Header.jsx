@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Transition from "../utils/Transition";
-import LOGO from "../images/logotype.png";
+import LOGO from "../images/favicon.png";
 
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
