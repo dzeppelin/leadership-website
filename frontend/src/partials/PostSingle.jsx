@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import getMonth from "./getMonth";
 import ReactMarkdown from "react-markdown";
 import "../css/additional-styles/article-styling.scss";
+import { Instagram } from "react-content-loader";
 
 import NewsImage from "../images/news-single.jpg";
 
@@ -36,7 +37,11 @@ function PostSingle(props) {
             <Query query={GET_POST}>
               {({ loading, error, data }) => {
                 if (loading) {
-                  return <p>Loading...</p>;
+                  return (
+                    <div>
+                      <Instagram />
+                    </div>
+                  );
                 }
                 if (error) {
                   return <p>Error Damn It</p>;
