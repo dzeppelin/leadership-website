@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import { Query } from "react-apollo";
 import { gql } from "graphql-tag";
 import { Link } from "react-router-dom";
 import getMonth from "./getMonth";
+import ContentLoader from "react-content-loader";
 
 function BlogList() {
-  const [posts, setPosts] = useState([]);
-
   const GET_POSTS = gql`
     query {
-      posts {
+      posts(sort: "created_at:asc") {
         id
         Title
         Description
@@ -43,7 +42,14 @@ function BlogList() {
               <Query query={GET_POSTS}>
                 {({ loading, error, data }) => {
                   if (loading) {
-                    return <p>Loading...</p>;
+                    return (
+                      <div>
+                        <ContentLoader />
+                        <ContentLoader />
+                        <ContentLoader />
+                        <ContentLoader />
+                      </div>
+                    );
                   }
                   if (error) {
                     return <p>Error Damn It</p>;
@@ -62,12 +68,12 @@ function BlogList() {
                                 to={`/post/${item.id}`}
                                 className="hover:underline"
                               >
-                                {item.Title}
+                                {item.Title || <Skeleton />}
                               </Link>
                             </h2>
                           </header>
                           <div className="text-lg text-gray-600 mb-4">
-                            {item.Description}
+                            {item.Description || <Skeleton />}
                           </div>
                           <footer className="text-sm">
                             <div className="flex items-center">
@@ -79,13 +85,15 @@ function BlogList() {
                                   >
                                     <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
                                   </span>
-                                  <img
-                                    className="relative rounded-full"
-                                    src={`https://admin.talapov.com${item.Author.Avatar.formats.thumbnail.url}`}
-                                    width="32"
-                                    height="32"
-                                    alt="Author 04"
-                                  />
+                                  {(
+                                    <img
+                                      className="relative rounded-full"
+                                      src={`https://admin.talapov.com${item.Author.Avatar.formats.thumbnail.url}`}
+                                      width="32"
+                                      height="32"
+                                      alt="Author"
+                                    />
+                                  ) || <Skeleton />}
                                 </a>
                               </div>
                               <div>
@@ -94,8 +102,8 @@ function BlogList() {
                                   className="font-medium hover:underline"
                                   href={`/post/${item.id}`}
                                 >
-                                  {item.Author.FirstName}{" "}
-                                  {item.Author.SecondName}
+                                  {item.Author.FirstName || <Skeleton />}{" "}
+                                  {item.Author.SecondName || <Skeleton />}
                                 </a>
                                 <span className="text-gray-600">
                                   {" "}
