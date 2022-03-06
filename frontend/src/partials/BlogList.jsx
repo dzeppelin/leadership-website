@@ -8,7 +8,7 @@ import ContentLoader from "react-content-loader";
 function BlogList() {
   const GET_POSTS = gql`
     query {
-      posts(sort: "created_at:asc") {
+      posts(sort: "Date:desc") {
         id
         Title
         Description
