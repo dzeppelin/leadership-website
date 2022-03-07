@@ -2,8 +2,6 @@
 
 That's a project for a leadership course. The task is to create something useful for an aspect you are consered in the current society.
 
-![image](https://user-images.githubusercontent.com/81620918/156965625-ecd44769-ae07-4a69-a06d-5317b733f13f.png)
-
 The stack:
 
 - The backend
