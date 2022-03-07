@@ -152,26 +152,11 @@ function Footer() {
             <p className="text-sm text-gray-600 mb-4">
               Our emails:
               <br />
-              <a
-                href="mailto:abzh423@protonmail.com"
-                className="text-gray-900 underline"
-              >
-                abzh423@protonmail.com (Developer)
-              </a>
+              abzh423@protonmail.com
               <br />
-              <a
-                href="mailto:magzhan.balken@nu.edu.kz"
-                className="text-gray-900 underline"
-              >
-                magzhan.balken@nu.edu.kz (Content)
-              </a>
+              magzhan.balken@nu.edu.kz
               <br />
-              <a
-                href="mailto:akzhan.yerkin@nu.edu.kz"
-                className="text-gray-900 underline"
-              >
-                akzhan.yerkin@nu.edu.kz (Content)
-              </a>
+              akzhan.yerkin@nu.edu.kz
             </p>
           </div>
         </div>
