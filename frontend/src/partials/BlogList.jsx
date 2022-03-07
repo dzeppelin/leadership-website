@@ -58,7 +58,7 @@ function BlogList() {
                   return data.posts.map((item) => {
                     return (
                       <article
-                        className="flex items-center py-4 border-b border-gray-200"
+                        className="flex items-center py-4 border-b last:border-b-0 border-gray-200"
                         key={item.id}
                       >
                         <div>
@@ -68,12 +68,12 @@ function BlogList() {
                                 to={`/post/${item.id}`}
                                 className="hover:underline"
                               >
-                                {item.Title || <Skeleton />}
+                                {item.Title}
                               </Link>
                             </h2>
                           </header>
                           <div className="text-lg text-gray-600 mb-4">
-                            {item.Description || <Skeleton />}
+                            {item.Description}
                           </div>
                           <footer className="text-sm">
                             <div className="flex items-center">
@@ -85,15 +85,13 @@ function BlogList() {
                                   >
                                     <span className="absolute inset-0 -m-px bg-white rounded-full"></span>
                                   </span>
-                                  {(
-                                    <img
-                                      className="relative rounded-full"
-                                      src={`https://admin.talapov.com${item.Author.Avatar.formats.thumbnail.url}`}
-                                      width="32"
-                                      height="32"
-                                      alt="Author"
-                                    />
-                                  ) || <Skeleton />}
+                                  <img
+                                    className="relative rounded-full"
+                                    src={`https://admin.talapov.com${item.Author.Avatar.formats.thumbnail.url}`}
+                                    width="32"
+                                    height="32"
+                                    alt="Author"
+                                  />
                                 </a>
                               </div>
                               <div>
@@ -102,8 +100,8 @@ function BlogList() {
                                   className="font-medium hover:underline"
                                   href={`/post/${item.id}`}
                                 >
-                                  {item.Author.FirstName || <Skeleton />}{" "}
-                                  {item.Author.SecondName || <Skeleton />}
+                                  {item.Author.FirstName}{" "}
+                                  {item.Author.SecondName}
                                 </a>
                                 <span className="text-gray-600">
                                   {" "}

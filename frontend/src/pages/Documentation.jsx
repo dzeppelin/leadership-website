@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "../partials/Header";
 import DocumentationContent from "../partials/DocumentationContent";
 import Footer from "../partials/Footer";
+import CtaAlternative from "../partials/CtaAlternative";
 
 function Documentation() {
   const [sidebarNavOpen, setSidebarNavOpen] = useState(false);
@@ -26,6 +27,7 @@ function Documentation() {
             </div>
           </div>
         </section>
+        <CtaAlternative />
       </main>
 
       {/*  Site footer */}
