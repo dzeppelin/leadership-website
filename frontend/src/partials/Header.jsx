@@ -57,7 +57,7 @@ function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src={LOGO} alt="" style={{ height: 50, width: 50 }} />
+              <img src={LOGO} alt="logo" style={{ height: 50, width: 50 }} />
             </Link>
           </div>
 

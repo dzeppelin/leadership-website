@@ -22,13 +22,13 @@ function DocumentationContent() {
           et netus et, nibh nisl condimentum id venenatis a condimentum vitae
           sapien.
         </p>
-        <h3
+        <h2
           id="installation"
           className="h3 text-gray-900 mb-4"
           style={{ scrollMarginTop: "100px" }}
         >
           Installation
-        </h3>
+        </h2>
         <p className="mb-8">
           Sit amet cursus sit amet dictum sit amet. Mattis pellentesque id nibh
           tortor id nulla aliquet porttitor lacus luctus accumsan, tortor
