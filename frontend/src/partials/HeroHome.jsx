@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "../utils/Modal";
 
-import HeroImage from "../images/hero-image-01.png";
+import HeroImage from "../images/hero-image-01.jpg";
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -17,9 +17,9 @@ function HeroHome() {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Make your website{" "}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                wonderful
+              Help yourself to find <br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">
+                your way
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
@@ -28,8 +28,8 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                This website helps people to understand life better. It helps
+                you to deal with depression and hard moments in life.
               </p>
             </div>
           </div>
@@ -60,7 +60,7 @@ function HeroHome() {
                 aria-controls="modal"
               >
                 <svg
-                  className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 shrink-0"
+                  className="w-6 h-6 fill-current text-gray-400 group-hover:text-green-600 shrink-0"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >

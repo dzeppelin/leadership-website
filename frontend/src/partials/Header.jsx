@@ -70,7 +70,7 @@ function Header() {
                   to="/notes"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
                 >
-                  Notes
+                  References
                 </Link>
               </li>
               <li>
