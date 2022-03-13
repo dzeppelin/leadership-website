@@ -45,8 +45,6 @@ function PostSingle(props) {
                   return <p>Error Damn It</p>;
                 }
 
-                console.log(data);
-
                 return (
                   <article>
                     {/* Article header */}
@@ -110,10 +108,10 @@ function PostSingle(props) {
                             <div className="mt-6">
                               <Link
                                 to="/blog"
-                                className="inline-flex items-center text-base text-blue-600 font-medium hover:underline"
+                                className="inline-flex items-center text-base text-green-600 font-medium hover:underline"
                               >
                                 <svg
-                                  className="w-3 h-3 fill-current text-blue-400 shrink-0 mr-2"
+                                  className="w-3 h-3 fill-current text-green-600 shrink-0 mr-2"
                                   viewBox="0 0 12 12"
                                   xmlns="http://www.w3.org/2000/svg"
                                 >

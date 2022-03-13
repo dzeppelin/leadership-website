@@ -47,7 +47,6 @@ function BlogList() {
                         <ContentLoader />
                         <ContentLoader />
                         <ContentLoader />
-                        <ContentLoader />
                       </div>
                     );
                   }
