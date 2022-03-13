@@ -1,6 +1,6 @@
 ### leadership-website
 
-That's a project for a leadership course. The task is to create something useful for an aspect you are consered in the current society.
+That's a project for a leadership course. The task is to create something useful for an aspect you are concerned in the current society.
 
 The stack:
 
