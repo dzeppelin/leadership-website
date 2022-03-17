@@ -59,7 +59,7 @@ function Team() {
                           {data.authors[0].FirstName}{" "}
                           {data.authors[0].SecondName}
                         </h4>
-                        <div className="text-blue-600 font-medium mb-2">
+                        <div className="text-green-600 font-medium mb-2">
                           Software Engineer
                         </div>
                       </div>
@@ -81,7 +81,7 @@ function Team() {
                           {data.authors[1].FirstName}{" "}
                           {data.authors[1].SecondName}
                         </h4>
-                        <div className="text-blue-600 font-medium mb-2">
+                        <div className="text-green-600 font-medium mb-2">
                           Content Creator
                         </div>
                       </div>
@@ -103,7 +103,7 @@ function Team() {
                           {data.authors[2].FirstName}{" "}
                           {data.authors[2].SecondName}
                         </h4>
-                        <div className="text-blue-600 font-medium mb-2">
+                        <div className="text-green-600 font-medium mb-2">
                           Content Creator
                         </div>
                       </div>
