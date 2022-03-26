@@ -37,7 +37,7 @@ function PostSingle(props) {
                 if (loading) {
                   return (
                     <div>
-                      <Instagram />
+                      <p>Loading...</p>
                     </div>
                   );
                 }

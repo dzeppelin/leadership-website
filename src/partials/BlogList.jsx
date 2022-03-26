@@ -44,9 +44,7 @@ function BlogList() {
                   if (loading) {
                     return (
                       <div>
-                        <ContentLoader />
-                        <ContentLoader />
-                        <ContentLoader />
+                        <p>Loading...</p>
                       </div>
                     );
                   }
