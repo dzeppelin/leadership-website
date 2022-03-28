@@ -13,6 +13,7 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import PageNotFound from "./pages/PageNotFound";
 import References from "./pages/References";
+import About from "./pages/About";
 
 function App() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/references" element={<References />} />
+        <Route path="/about" element={<About />} />
         <Route path="/post/:id" element={<BlogPost />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

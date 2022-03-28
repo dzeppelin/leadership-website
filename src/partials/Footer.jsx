@@ -37,15 +37,6 @@ function Footer() {
               <li className="mb-2">
                 <a
                   target="_blank"
-                  href="https://b-ok.as/"
-                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
-                >
-                  Books
-                </a>
-              </li>
-              <li className="mb-2">
-                <a
-                  target="_blank"
                   href="https://pixabay.com/"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
@@ -129,10 +120,18 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link
-                  to="/notes"
+                  to="/about"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Notes
+                  About Us
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link
+                  to="/references"
+                  className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
+                >
+                  References
                 </Link>
               </li>
               <li className="mb-2">
@@ -140,7 +139,7 @@ function Footer() {
                   to="/blog"
                   className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out"
                 >
-                  Blog
+                  Recent Posts
                 </Link>
               </li>
             </ul>
