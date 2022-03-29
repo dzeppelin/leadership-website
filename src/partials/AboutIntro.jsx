@@ -9,9 +9,9 @@ function AboutIntro() {
         <div className="pt-32 pb-12 md:pt-40 md:pb-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4">Answers on some of the commitments</h1>
+            <h1 className="h1 mb-4">We really want to help you!</h1>
             <p className="text-xl text-gray-600">
-              That section answers the questions about our group.
+              That section answers some of the questions about our group.
             </p>
           </div>
 

@@ -9,7 +9,7 @@ function AboutStory() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
           <div className="max-w-3xl mx-auto">
-            <h3 className="h3 mb-3">#1 Clarify Values</h3>
+            <h3 className="h3 mb-3">Our Values</h3>
             <p className="text-lg text-gray-600 mb-8">
               Depression and hard moments in life are important to each member
               of the group because they provide an opportunity to learn and
@@ -19,7 +19,7 @@ function AboutStory() {
             </p>
           </div>
           <div className="max-w-3xl mx-auto">
-            <h3 className="h3 mb-3">#2 Set the Example</h3>
+            <h3 className="h3 mb-3">Why do we care?</h3>
             <p className="text-lg text-gray-600 mb-8">
               The members of our group are all examples of people who have dealt
               with depression and hard moments in life. Each of us has our own
@@ -30,7 +30,7 @@ function AboutStory() {
             </p>
           </div>
           <div className="max-w-3xl mx-auto">
-            <h3 className="h3 mb-3">#3 Envision the future</h3>
+            <h3 className="h3 mb-3">The Vision</h3>
             <p className="text-lg text-gray-600 mb-8">
               Our mission is to provide support and resources for those
               struggling with depression and other mental health issues. We aim
