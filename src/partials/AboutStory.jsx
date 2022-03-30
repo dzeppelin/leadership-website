@@ -42,6 +42,12 @@ function AboutStory() {
             We believe that by sharing our stories and experiences, we can help others to understand that they are not alone in their struggles. We also believe that by reaching out to others, we can help to create a network of support that can help to make dealing with these difficult times a little bit easier.
             </p>
           </div>
+          <div className="max-w-3xl mx-auto">
+            <h3 className="h3 mb-3">We strive for excellence</h3>
+            <p className="text-lg text-gray-600 mb-8">
+            Our group is always striving to do better. We are never satisfied with the status quo and are always looking for ways to improve. We are committed to excellence and are always looking for ways to improve our skills and knowledge.
+            </p>
+          </div>
           <Cta />
         </div>
       </div>
