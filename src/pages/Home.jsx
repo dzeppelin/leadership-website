@@ -14,7 +14,7 @@ function Home() {
       {/*  Page content */}
       <main className="grow">
         {/*  Page sections */}
-        <HeroHome />
+        <HeroHome />   
         <Team />
       </main>
 
