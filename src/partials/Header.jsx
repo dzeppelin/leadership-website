@@ -155,6 +155,15 @@ function Header() {
                     </Link>
                   </li>
                   <li>
+                    <a
+                      href="https://forumental.ru"
+                      target="_blank"
+                      className="flex text-gray-600 hover:text-gray-900 py-2"
+                    >
+                      Forum Mental
+                    </a>
+                  </li>
+                  <li>
                     <Link
                       to="/blog"
                       className="flex text-gray-600 hover:text-gray-900 py-2"
