@@ -82,6 +82,15 @@ function Header() {
                 </Link>
               </li>
               <li>
+                <a
+                  href="https://forumental.ru"
+                  target="_blank"
+                  className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
+                >
+                  Web Forum
+                </a>
+              </li>
+              <li>
                 <Link
                   to="/blog"
                   className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out"
