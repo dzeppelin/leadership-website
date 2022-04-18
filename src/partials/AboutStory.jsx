@@ -48,6 +48,12 @@ function AboutStory() {
             Our group is always striving to do better. We are never satisfied with the status quo and are always looking for ways to improve. We are committed to excellence and are always looking for ways to improve our skills and knowledge.
             </p>
           </div>
+          <div className="max-w-3xl mx-auto">
+            <h3 className="h3 mb-3">We celebrate our victories and victories of those who overcome their problems</h3>
+            <p className="text-lg text-gray-600 mb-8">
+            Our website and forum approaches mental health problems and their owners from various sides. The most important is to give them relief after they got even tiniest problem solved by helping them to celebrate their victory.
+            </p>
+          </div>
           <Cta />
         </div>
       </div>
